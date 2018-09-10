@@ -1,0 +1,87 @@
+
+
+
+
+
+{% block head %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Including the Lobster font from Google's Font Directory -->
+    
+    <!--link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" -->
+    <link rel="stylesheet" href="{{ asset('css/demo.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/estilo.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/Demo.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/jBox.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/jBox.Confirm.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/jBox.Image.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/jBox.Notice.css') }}" />
+{#<script src="{{ asset('js/jquery-3.2.1.js') }}"></script>#}
+    {#<script src="{{ asset('js/jquery-1.7.2.min.js') }}"></script>#}
+
+
+{% endblock %}
+
+{#{% block title 'Demo Bundle' %}#}
+
+{% block header %}
+    <div class="header">
+        <div class="container">
+            <a href="#">
+                <img class="logo" src="{{ asset('images/game/logo_web.png') }}"  />
+                
+            </a>
+            
+            <nav>
+                <ul class="fancyNav">
+                    <li id="home"><a href="#">HOME</a></li>
+                    <li id="news"><a href="#">PRODUCT</a></li>
+                    <li id="about"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            
+            
+            
+         
+          
+          
+          
+            
+       </div> 
+    </div>
+
+{% endblock %}
+
+
+
+{% block body %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+{% endblock %}
+
+
+{% block footer %}
+    <div class="footer">
+        <div class="container">
+            <div class="izq" style="float:left;">
+                <img class="tablet" src="{{ asset('images/game/footer_tablet.png') }}" />
+                <div class="text1-footer">Sitio web <br> optimizado para tablet</div>
+                
+                <div class="text2-footer">
+                    El contenido de esta obra es de propiedad intelectual de ESPOL y EDCOM. <br>
+                    Todos los derechos reservados.
+                    
+                </div> 
+            </div>    
+             
+             <div class="derecha" style="float:right;">
+                <img class="logo-espol" src="{{ asset('images/game/footer_logo_espol.png') }}" />
+             </div>
+            
+        </div>
+        
+        
+    </div>
+
+{% endblock %}
+
