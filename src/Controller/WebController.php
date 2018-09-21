@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class WebController extends Controller
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/public/", name="home")
      */
     public function home()
     {
